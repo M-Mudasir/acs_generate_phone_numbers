@@ -11,7 +11,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 connection_string = os.getenv("COMMUNICATION_SERVICE_CONNECTION_STRING")
-print(connection_string)
+
 phone_numbers_client = PhoneNumbersClient.from_connection_string(connection_string)
 
 capabilities = PhoneNumberCapabilities(
